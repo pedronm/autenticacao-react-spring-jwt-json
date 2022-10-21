@@ -1,0 +1,4 @@
+1. Modificar o elemento de permissões para que os perfis sejam "Ativáveis" também, ou seja, 
+ recebme agora true ou false
+
+2. Próximo passo vai ser a construção da tela para que haja essa interação

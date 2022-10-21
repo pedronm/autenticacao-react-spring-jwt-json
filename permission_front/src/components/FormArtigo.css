@@ -1,0 +1,18 @@
+main{
+
+    display: flex;
+    flex-flow: row wrap;
+
+    padding: 4rem;
+    margin: 2rem 0;
+
+    border: black solid 0.2em;
+    border-top: black solid 0.06em;
+    border-right: black solid 0.08em;
+    border-bottom-right-radius: 20px ;
+    border-bottom-left-radius: 20px ;
+    
+    box-shadow: 0.24em 0.3em rgb(72, 61, 140, 40%);
+
+}
+

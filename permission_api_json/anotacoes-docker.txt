@@ -1,0 +1,8 @@
+*   Pra executar o script no container, é necessário copiar o arquivo de script pra dentro
+*   docker cp ./[nome do script].sql [nome do contêiner]:/[caminho do conteiner do docker]/[nome do script].sql
+*   docker exec -u [usuario postgre] [nome do contêiner] psql [nome base] [usuario postgre] -f /container/path/[nome do script]
+*	No docker-compose, o volumes mais externo, declarado com espaço vazio, significa que o 
+*	diretório de armazenamento vai ser no dispositivo local que geralmente fica configurado no docker.	
+
+   depends_on:
+      - web

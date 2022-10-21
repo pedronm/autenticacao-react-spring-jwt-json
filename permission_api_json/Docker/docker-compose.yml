@@ -1,0 +1,28 @@
+version: "3.8"
+services:
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=moraes_teste@gmail.com 
+      - PGADMIN_DEFAULT_PASSWORD=12345
+    ports:
+      - "99:80"
+    networks:
+      - postgres-network
+  postgres:
+    image: postgres:latest
+    container_name: postgres
+    environment:
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - "5432:5432"
+    networks:
+      - postgres-network
+    volumes:
+      - "local-driver:/var/lib/postgresql/data"
+networks:
+  postgres-network:
+    driver: bridge
+volumes:
+  local-driver:
